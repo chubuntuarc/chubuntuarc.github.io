@@ -1,111 +1,232 @@
-<!--Sitio web desarrollado por Jesus Arciniega
-github.com/chubuntuarc
-Derechos reservados 2016-->
 <!DOCTYPE html>
-<html>
-  <head>
-    <!--Meta-Tags-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width-device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta name="autor" content="Jesus Arciniega">
-    <meta name="description" content="Sitio Personal y Portafolio de Jesus Arciniega" />
-    <link rel="shortcut icon" href="https://drive.google.com/file/d/0BxAVADAmLYQEYk9aN29FMU5EcEE/view?usp=sharing" />
-    <!--/Meta-Tags-->
-    <title>Desarrollo Web | Jesus Arciniega</title>
-    <!--Stylesheets-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" media="screen" title="no title" charset="utf-8">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--/Stylesheets-->
-  </head>
-  <body>
-    <!--Barra de navegación-->
-    <nav>
-        <div class="nav-wrapper blue darken-4">
-          <a href="#!" class="brand-logo">Jesus Arciniega | Desarrollador Web</a>
-          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="#sobre_mi">Sobre mí</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#portafolio">Portafolio</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-          </ul>
-          <ul class="side-nav" id="mobile-demo">
-            <li><a href="#sobre_mi">Sobre mí</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#portafolio">Portafolio</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-          </ul>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>Valkiria - Desarrollo de Software</title>
+
+    <!-- CSS  -->
+    <link href="../css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+    <nav class="black" role="navigation" style="z-index:999;">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo white-text">Arciniega</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#modal-contact" class="white-text modal-trigger">Contacto</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="#">Navbar Link</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
-      </nav>
-      <!--/Barra de navegación-->
-      <!--Contenido -->
-      <div class="parallax-container">
-    <div class="parallax"><img src="http://img15.deviantart.net/177b/i/2014/084/d/8/web_developer_wallpaper__code__by_plusjack-d7bmt54.jpg"></div>
-  </div>
-  <div class="section white" id="sobre_mi">
-    <div class="row container">
-      <h2 class="header">Sobre Mí</h2>
-      <p class="grey-text text-darken-3 lighten-3">Desarrollador de Software especializado en desarrollo web.</p>
-      <p class="grey-text text-darken-3 lighten-3">Amplia experiencia en desarrollo de Sistemas y Sitios Web a la medida.</p>
-      <h5 class="grey-text text-darken-3 lighten-3">Su proyecto en las mejores manos.</h5>
-    </div>
-  </div>
-  <div class="parallax-container">
-    <div class="parallax"><img src="http://www.innoeragroup.lt/images/uploaded_articles/image_intro_G-for-Small-Business.jpg"></div>
-  </div>
-  <div class="section white" id="servicios">
-    <div class="row container">
-      <h2 class="header">Desarrollo de Sistemas y Sitios Web.</h2>
-    </div>
-  </div>
-  <div class="slider" id="portafolio">
-    <ul class="slides">
-      <li>
-        <img src="http://aimex.sytes.net/img/slides/Slide1.jpg">
-        <div class="caption center-align">
-          <h3><a href="http://aimex.sytes.net" target="_blank" class="white-text">AIMCO Corporation de México</a></h3>
-          <h5 class="light grey-text text-lighten-3">Dashboard Corporativo</h5>
+    </nav>
+
+    <div id="modal-contact" class="modal bottom-sheet">
+        <div class="modal-content">
+          <h4>Contacto</h4>
+          <p>Cel: (614) 250 5627</p>
+          <p>Correo: chubuntu@live.com</p>
         </div>
-      </li>
-    </ul>
-  </div>
-  <div class="section white" id="servicios">
-    <div class="row container">
-      <h2 class="header">Contacto</h2>
-      <p class="grey-text text-darken-3 lighten-3">Télefono: (614) 250 5627.</p>
-      <p class="grey-text text-darken-3 lighten-3">Correo: chubuntu@live.com.</p>
-    </div>
-  </div>
-  <!--/Contenido -->
-  <!--Footer -->
-  <footer class="page-footer black">
-          <div class="container">
+        <div class="modal-footer">
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+        </div>
+      </div>
+      <div class="parallax-container valign-wrapper" style="height:850px;">
+          <div class="section no-pad-bot">
+              <div class="container">
+                  <div class="row center">
+                      <div class="slider__warpper">
+                          <!-- <div class="flex__container flex--pikachu animate--start" data-slide="1">
+                              <div class="flex__item flex__item--left">
+                                  <div class="flex__content">
+                                      <p class="text--sub">Pokemon Gen I</p>
+                                      <h1 class="text--big">Pikachu</h1>
+                                      <p class="text--normal">Pikachu is an Electric-type Pokémon introduced in Generation I. Pikachu are small, chubby, and incredibly cute mouse-like Pokémon. They are almost completely covered by yellow fur.</p>
+                                  </div>
+                                  <p class="text__background">Pikachu</p>
+                              </div>
+                              <div class="flex__item flex__item--right"></div>
+                              <img class="pokemon__img" src="http://www.whurk.co.uk/wp-content/uploads/revslider/engineering/warehouse-man.png" />
+                          </div>
+                          <div class="flex__container flex--piplup animate--start" data-slide="2">
+                              <div class="flex__item flex__item--left">
+                                  <div class="flex__content">
+                                      <p class="text--sub">Pokemon Gen IV</p>
+                                      <h1 class="text--big">Piplup</h1>
+                                      <p class="text--normal">Piplup is the Water-type Starter Pokémon of the Sinnoh region. It was introduced in Generation IV. Piplup has a strong sense of self-esteem. It seldom accepts food that people give because of its pride.</p>
+                                  </div>
+                                  <p class="text__background">Piplup</p>
+                              </div>
+                              <div class="flex__item flex__item--right"></div>
+                              <img class="pokemon__img" src="https://s4.postimg.org/sa9dl4825/pilup.png" />
+                          </div> -->
+                          <div class="flex__container flex--blaziken flex--active" data-slide="3">
+                              <div class="flex__item flex__item--left">
+                                  <div class="flex__content">
+                                      <p class="text--sub">Arciniega</p>
+                                      <h1 class="text--big">Inventarios</h1>
+                                      <p class="text--normal">Software especializado en el control de inventarios, controla cada uno de los aspectos de tu negocio gracias a nuestra herramienta de manejo de inventarios.</p>
+                                  </div>
+                                  <p class="text__background">Inventarios</p>
+                              </div>
+                              <div class="flex__item flex__item--right"></div>
+                              <img class="pokemon__img" src="../img/inventory.png" />
+                          </div>
+                          <div class="flex__container flex--dialga animate--start" data-slide="4">
+                              <div class="flex__item flex__item--left">
+                                  <div class="flex__content">
+                                      <p class="text--sub">Arciniega</p>
+                                      <h1 class="text--big">Control Médico</h1>
+                                      <p class="text--normal">Controla tus citas, historial de tus pacientes, control de pacientes y gastos sin importar donde te encuentres</p>
+                                      </div>
+                                      <p class="text__background">Médico</p>
+                                  </div>
+                                  <div class="flex__item flex__item--right"></div>
+                                  <img class="pokemon__img" src="../img/doctor.png" />
+                              </div>
+                              <!-- <div class="flex__container flex--zekrom animate--start" data-slide="5">
+                                  <div class="flex__item flex__item--left">
+                                      <div class="flex__content">
+                                          <p class="text--sub">Pokemon Gen V</p>
+                                          <h1 class="text--big">Zekrom</h1>
+                                          <p class="text--normal">Zekrom is a Dragon/Electric-type Legendary Pokémon. It is part of the Tao Trio, along with Reshiram and Kyurem. Zekrom is a large, black draconian Pokémon that seems to share its theme with its counterpart, Reshiram. It has piercing red eyes and
+                                              dark gray to black skin that seems to be armor-like.</p>
+                                          </div>
+                                          <p class="text__background">Zekrom</p>
+                                      </div>
+                                      <div class="flex__item flex__item--right"></div>
+                                      <img class="pokemon__img" src="https://s4.postimg.org/malmhgn9p/zekrom.png" />
+                                  </div> -->
+                              </div>
+
+                              <div class="slider__navi">
+                                  <!-- <a href="#" class="slide-nav" data-slide="1">pikachu</a>
+                                  <a href="#" class="slide-nav" data-slide="2">piplup</a> -->
+                                  <a href="#" class="slide-nav active" data-slide="3">blaziken</a>
+                                  <a href="#" class="slide-nav" data-slide="4">dialga</a>
+                                  <!-- <a href="#" class="slide-nav" data-slide="5">zekrom</a> -->
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+    <div class="container">
+        <div class="section">
+
+            <!--   Icon Section   -->
             <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Desarrollo Web</h5>
-                <p class="grey-text text-lighten-4">Especialista en desarrollo web.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Redes</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="http://facebook.com/chuychuychuy" target="_blank">Facebook</a></li>
-                  <li><a class="grey-text text-lighten-3" href="http://twitter.com/chubuntuarc" target="_blank">Twitter</a></li>
-                  <li><a class="grey-text text-lighten-3" href="http://github.com/chubuntuarc" target="_blank">Github</a></li>
-                  <li><a class="grey-text text-lighten-3" href="https://mx.linkedin.com/in/jesusarciniega" target="_blank">LinkedIn</a></li>
-                </ul>
-              </div>
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center red-text darken-4"><i class="material-icons">flash_on</i></h2>
+                        <h5 class="center">Rápido</h5>
+
+                        <p class="light">Necesitas que tu negocio crezca y poder trabajar en el momento que desees, utiliza nuestras herramientas y verás lo rápìdo que podrás poner manos a la obra.</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center red-text  darken-4"><i class="material-icons">group</i></h2>
+                        <h5 class="center">Personalizado</h5>
+
+                        <p class="light">Software a la medida, por supuesto, nuestras herramientas pueden ser adaptadas a las necesidades de tu negocio, sabemos que no todas las empresas trabajan de la misma manera.</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center red-text darken-4"><i class="material-icons">settings</i></h2>
+                        <h5 class="center">Eficiente</h5>
+
+                        <p class="light">Solo necesitas conexión a internet, no importa si no cuentas con un equipo de ultima generación o con solo una tablet, nuestro software esta siempre en linea para que trabajes donde estes.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="footer-copyright">
+
+        </div>
+    </div>
+
+
+    <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
             <div class="container">
-            © 2016 Jesus Arciniega
-            <a class="grey-text text-lighten-4 right" href="mailto:chubuntu@live.com"> <i class="material-icons">mail_outline</i></a>
+                <div class="row center">
+                    <!-- <h5 class="header col s12 light">Somos una nueva generación de desarrolladores trabajando para ti</h5> -->
+                </div>
             </div>
-          </div>
-        </footer>
-        <!--/Footer -->
-  </body>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="master.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+        </div>
+        <div class="parallax"><img src="../img/new_generation.jpg" alt="Unsplashed background img 2"></div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+
+            <div class="row">
+                <div class="col s12 center">
+                    <h3><i class="mdi-content-send brown-text"></i></h3>
+                    <h4>Me gustaría conocerte</h4>
+                    <p class="left-align light">¿Que buscas para hacer crecer tu negocio?. Estoy a tu disposición buscando ofrecerte las mejores soluciones en tecnología.</p>
+                    <h5>A tus órdenes</h5>
+                    <p>(614) 250 5627 | chubuntu@live.com</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <!-- <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5> -->
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="../img/barrancas.png" alt="Unsplashed background img 3"></div>
+    </div>
+    <footer class="page-footer red darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Arciniega</h5>
+                    <p class="grey-text text-lighten-4">Desarrollo de software. Productos y servicios a la medida.<br> Chihuahua, México</p>
+
+
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Software</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Inventarios</a></li>
+                        <li><a class="white-text" href="#!">Control Médico</a></li>
+                        <li><a class="white-text" href="#!">Sitios</a></li>
+                        <li><a class="white-text" href="#!">Empresas</a></li>
+                    </ul>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Redes</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Facebook</a></li>
+                        <li><a class="white-text" href="#!">LinkedIn</a></li>
+                        <li><a class="white-text" href="#!">Youtube</a></li>
+                        <li><a class="white-text" href="#!">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Desarrollado por <a class="brown-text text-lighten-3" href="http://chubuntuarc.github.io">Arciniega</a>
+            </div>
+        </div>
+    </footer>
+
+    <!--  Scripts-->
+    <script src="../js/plugins.js"></script>
+    <script src="../js/init.js"></script>
+
+</body>
 </html>
