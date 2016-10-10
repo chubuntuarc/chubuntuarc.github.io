@@ -1,36 +1,134 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <meta charset="utf-8">
-        <title>Jesus Arciniega | Desarrollador de Software</title>
-    </head>
-    <body>
-        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-
-        <ul id="slide-out" class="side-nav">
-            <li><div class="userView">
-              <img class="background" src="http://www.spyderonlines.com/images/wallpapers/black-wallpaper-hd/black-wallpaper-hd-11.jpg" class="responsive-img">
-              <a href="#!user"><img class="circle" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAf0AAAAJDkxOTQxMTU4LWZjMDEtNDc5OS04ZjMzLTFiNmZhY2M2ZTQ0Nw.jpg"></a>
-              <a href="#!name"><span class="white-text name">Jesus Arciniega</span></a>
-              <a href="#!email"><span class="white-text email">arciniega.chubuntu@gmail.com</span></a>
-            </div></li>
-            <li><a href="https://mx.linkedin.com/in/jesusarciniega" target="_blank">LinkedIn</a></li>
-            <li><a href="http://github.com/chubuntuarc" target="_blank">Github</a></li>
-            <li><div class="divider"></div></li>
-            <li><a class="subheader">Proyectos</a></li>
-            <li><a class="waves-effect" href="#!">El Pionero @Exosfera</a></li>
-            <li><a class="waves-effect" href="#!">Funerales Miranda @Exosfera</a></li>
-            <li><a class="waves-effect" href="#!">ValkiriaTech @PcSorías</a></li>
-            <li><a class="waves-effect" href="#!">Catálogo BolsasMM @PcSorías</a></li>
-          </ul>
-    </body>
-    <script type="text/javascript" src="plugins.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function(){
-       $(".button-collapse").sideNav();
-    });
-    </script>
+<head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Jesus Arciniega | Desarrollador de Software</title>
+</head>
+<body>
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul id="slide-out" class="side-nav">
+        <li><div class="userView">
+            <img class="background" src="http://www.spyderonlines.com/images/wallpapers/black-wallpaper-hd/black-wallpaper-hd-11.jpg" class="responsive-img">
+            <a href="#!user"><img class="circle" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAf0AAAAJDkxOTQxMTU4LWZjMDEtNDc5OS04ZjMzLTFiNmZhY2M2ZTQ0Nw.jpg"></a>
+            <a href="#!name"><span class="white-text name">Jesus Arciniega</span></a>
+            <a href="#!email"><span class="white-text email">arciniega.chubuntu@gmail.com</span></a>
+        </div></li>
+        <li><a href="https://mx.linkedin.com/in/jesusarciniega" target="_blank">LinkedIn</a></li>
+        <li><a href="http://github.com/chubuntuarc" target="_blank">Github</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Proyectos </a></li>
+        <li class="proyectos">
+            <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header">Exosfera</div>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a class="waves-effect" href="#!">El Pionero</a></li>
+                            <li><a class="waves-effect" href="#!">Impress Depot</a></li>
+                            <li><a class="waves-effect" href="#!">TNP</a></li>
+                            <li><a class="waves-effect" href="#!">CTU Trento</a></li>
+                            <li><a class="waves-effect" href="#!">Funerales Miranda</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header">PcSorías</div>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a class="waves-effect" href="#!">ValkiriaTech</a></li>
+                            <li><a class="waves-effect" href="#!">Catálogo BolsasMM</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header">UTCH</div>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a class="waves-effect" href="#!">Music Player</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li><div class="divider"></div></li>
+    </ul>
+    <!-- Contenido -->
+    <div class="row head">
+        <div class="col s12 center-align">
+            <h1>Jesus Arciniega</h1>
+            <h5>Developer</h5>
+        </div>
+    </div>
+    <div class="row about">
+        <div class="col s12">
+            <div class="col s6 center-align">
+                <img class="circle" style="height:300px;" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAf0AAAAJDkxOTQxMTU4LWZjMDEtNDc5OS04ZjMzLTFiNmZhY2M2ZTQ0Nw.jpg">
+            </div>
+            <div class="col s6" style="padding-top: 50px; ">
+                <p>Amante de la tecnología, y apasionado por el código y el software libre</p>
+                <p>Me considero una persona capaz de crear mejoras en el lugar donde laboro, me gusta aprender constantemente y mejorar en las áreas de oportunidad que lo necesite.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row portafolio center-align">
+        <h3>Portafolio</h3>
+    </div>
+    <div class="row footer">
+        <p>&copy; Jesus Arciniega</p>
+    </div>
+    <!-- Contenido -->
+</body>
+<style media="screen">
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+.about{
+    margin-left: 5%;
+    width: 90%;
+}
+.about p{
+    color: #424242;
+    font-size: 16px;
+}
+.footer{
+    background-color: #424242;
+    bottom: -20px;
+    color: #FFF;
+    padding-left: 5%;
+    padding-top: 3px;
+    position: fixed;
+    width: 100%;
+}
+.head{
+    border-bottom: solid 3px #6E6E6E;
+    color: #6E6E6E;
+    margin-left: 5%;
+    width: 90%;
+    z-index: 1;
+}
+.portafolio{
+    margin-left: 5%;
+    width: 90%;
+}
+.portafolio h3{
+    color: #6E6E6E;
+}
+.proyectos{
+    margin-left: 5%;
+}
+</style>
+<script type="text/javascript" src="plugins.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".button-collapse").sideNav();
+});
+</script>
 </html>
