@@ -1,6 +1,5 @@
 $( document ).ready(function(){
     var user = firebase.auth().currentUser;
-    console.log(user);
     var name, email, photoUrl, uid;
 
     if (user != null) {
