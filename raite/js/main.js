@@ -8,6 +8,7 @@ jQuery(document).ready(function($) {
     firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
             // User is signed in.
+            console.log(user);
             $('#user_login').text(user.displayName);
             $('#uid').text(user.uid);
             $('#logout').text("Cerrar sesión");
@@ -18,7 +19,7 @@ jQuery(document).ready(function($) {
     });
 });
 
-function guardarViaje(uid, car_type, picture, title, body) {
+function guardarViaje(uid, car_type, car_model, car_plates, origin, destination, seats, day, hour, price, comments) {
   // A post entry.
   var postData = {
     author: username,
