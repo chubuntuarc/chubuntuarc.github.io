@@ -15,7 +15,6 @@ jQuery(document).ready(function($) {
             var ref = firebase.database().ref('travels/');
             ref.on("child_added", function(snapshot){
                 console.log("El juego actual es ", snapshot.val());
-                console.log("El id actual es ", snapshot.key());
             });
 
 
@@ -50,13 +49,7 @@ function guardarViaje() {
     updates['/travels/' + newPostKey] = postData;
     //updates['/user-travels/' + uid + '/' + newPostKey] = postData;
 
-    return firebase.database().ref().update(updates);
     $('#modal_nuevo').modal('close');
-    Materialize.toast('Viaje registrado', 4000)
-
-    var ref = firebase.database().ref('travels/');
-    ref.on("child_added", function(snapshot){
-        console.log("El juego actual es ", snapshot.val());
-        console.log("El id actual es ", snapshot.key());
-    });
+    Materialize.toast('Viaje registrado', 4000);
+    return firebase.database().ref().update(updates);
 }
