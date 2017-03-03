@@ -12,7 +12,7 @@ jQuery(document).ready(function($) {
             $('#uid').text(user.uid);
             $('#logout').text("Cerrar sesión");
 
-            var ref = new Firebase("https://raite-49ffd.firebaseio.com/travels/");
+            var ref = firebase.database().ref('travels/');
             ref.on("child_added", function(snapshot){
                 console.log("El juego actual es ", snapshot.val());
                 console.log("El id actual es ", snapshot.key());
@@ -54,7 +54,7 @@ function guardarViaje() {
     $('#modal_nuevo').modal('close');
     Materialize.toast('Viaje registrado', 4000)
 
-    var ref = new Firebase("https://raite-49ffd.firebaseio.com/travels/");
+    var ref = firebase.database().ref('travels/');
     ref.on("child_added", function(snapshot){
         console.log("El juego actual es ", snapshot.val());
         console.log("El id actual es ", snapshot.key());
