@@ -1,4 +1,4 @@
-$( document ).ready(function(){
+jQuery(document).ready(function($) {
     alert('Test')
     var user = firebase.auth().currentUser;
 
@@ -13,4 +13,4 @@ $( document ).ready(function(){
         $('#user_login').text(user.displayName);
     }
     $(".button-collapse").sideNav()
-})
+});
