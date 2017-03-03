@@ -1,4 +1,5 @@
 $( document ).ready(function(){
+    alert('Test')
     var user = firebase.auth().currentUser;
 
     if (user != null) {
