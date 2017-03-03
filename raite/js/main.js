@@ -8,7 +8,6 @@ jQuery(document).ready(function($) {
     firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
             // User is signed in.
-            console.log(user);
             $('#user_login').text(user.displayName);
             $('#uid').text(user.uid);
             $('#logout').text("Cerrar sesión");
@@ -22,12 +21,17 @@ jQuery(document).ready(function($) {
 function guardarViaje(uid, car_type, car_model, car_plates, origin, destination, seats, day, hour, price, comments) {
   // A post entry.
   var postData = {
-    author: username,
     uid: uid,
-    body: body,
-    title: title,
-    starCount: 0,
-    authorPic: picture
+    car_type: car_type,
+    car_model: car_model,
+    car_plates: car_plates,
+    origin: origin,
+    destination: destination,
+    seats: seats,
+    day: day,
+    hour: hour,
+    price: price,
+    comments: comments
   };
 
   // Get a key for a new Post.
@@ -36,7 +40,7 @@ function guardarViaje(uid, car_type, car_model, car_plates, origin, destination,
   // Write the new post's data simultaneously in the posts list and the user's post list.
   var updates = {};
   updates['/travels/' + newPostKey] = postData;
-  updates['/user-travels/' + uid + '/' + newPostKey] = postData;
+  //updates['/user-travels/' + uid + '/' + newPostKey] = postData;
 
   return firebase.database().ref().update(updates);
 }
