@@ -3,6 +3,7 @@ jQuery(document).ready(function($) {
         if (user) {
             // User is signed in.
             console.log(user);
+             $('#user_login').text(user.displayName);
         } else {
             // No user is signed in.
         }
