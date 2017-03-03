@@ -18,20 +18,20 @@ jQuery(document).ready(function($) {
     });
 });
 
-function guardarViaje(uid, car_type, car_model, car_plates, origin, destination, seats, day, hour, price, comments) {
+function guardarViaje() {
   // A post entry.
   var postData = {
-    uid: uid,
-    car_type: car_type,
-    car_model: car_model,
-    car_plates: car_plates,
-    origin: origin,
-    destination: destination,
-    seats: seats,
-    day: day,
-    hour: hour,
-    price: price,
-    comments: comments
+    uid: $('#uid').val().toString(),
+    car_type: $('#car_type').val().toString(),
+    car_model: $('#car_model').val().toString(),
+    car_plates: $('#car_plates').val().toString(),
+    origin: $('#origin').val().toString()in,
+    destination: $('#destination').val().toString(),
+    seats: $('#seats').val().toString()eats,
+    day: $('#day').val().toString(),
+    hour: $('#hour').val().toString(),
+    price: $('#price').val().toString(),
+    comments: $('#comments').val().toString()
   };
 
   // Get a key for a new Post.
