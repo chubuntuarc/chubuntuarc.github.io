@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
-    var user = firebase.auth().currentUser;
+    var userName = firebase.auth().currentUser.displayName;
 
-    console.log(user.displayName);
+    console.log(userName);
 
     if (user != null) {
         console.log(user);
