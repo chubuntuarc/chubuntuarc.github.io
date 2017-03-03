@@ -25,7 +25,7 @@ function guardarViaje() {
     car_type: $('#car_type').val().toString(),
     car_model: $('#car_model').val().toString(),
     car_plates: $('#car_plates').val().toString(),
-    origin: $('#origin').val().toString()in,
+    origin: $('#origin').val().toString(),
     destination: $('#destination').val().toString(),
     seats: $('#seats').val().toString()eats,
     day: $('#day').val().toString(),
