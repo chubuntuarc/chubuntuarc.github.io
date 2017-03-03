@@ -4,9 +4,6 @@ jQuery(document).ready(function($) {
             // User is signed in.
              $('#user_login').text(user.displayName);
              $('#logout').text("Cerrar sesión");
-             if( $('#user_login').text() == 'Iniciar sesión'){
-                  location.reload(true);
-             }
         } else {
             // No user is signed in.
             $('#logout').text("");
