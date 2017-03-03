@@ -12,9 +12,10 @@ jQuery(document).ready(function($) {
             $('#uid').text(user.uid);
             $('#logout').text("Cerrar sesión");
 
-            return firebase.database().ref('/travels/').once('value').then(function(snapshot) {
-              var destino = snapshot.val().destination;
-              $('#viajedestino').text('Viaje a ' + destino);
+            var ref = new Firebase("https://raite-49ffd.firebaseio.com/travels/");
+            ref.on("child_added", function(snapshot){
+                console.log("El juego actual es ", snapshot.val());
+                console.log("El id actual es ", snapshot.key());
             });
 
 
@@ -53,8 +54,9 @@ function guardarViaje() {
     $('#modal_nuevo').modal('close');
     Materialize.toast('Viaje registrado', 4000)
 
-    return firebase.database().ref('/travels/').once('value').then(function(snapshot) {
-        var destino = snapshot.val().destination;
-        $('#viajedestino').text('Viaje a ' + destino);
+    var ref = new Firebase("https://raite-49ffd.firebaseio.com/travels/");
+    ref.on("child_added", function(snapshot){
+        console.log("El juego actual es ", snapshot.val());
+        console.log("El id actual es ", snapshot.key());
     });
 }
