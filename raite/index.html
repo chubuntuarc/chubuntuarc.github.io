@@ -32,6 +32,7 @@
 
     <h1>Puntos pendientes</h1>
     <ul>
+        <li><a href="../raite/login.html">login</a></li>
         <li>Registrar Viajes</li>
         <li>Precios</li>
         <li>Solicitar lugar</li>
@@ -47,10 +48,89 @@
     </ul>
 
     <div class="fixed-action-btn">
-    <a class="btn-floating btn-large">
-      <i class="large material-icons tooltipped" data-position="left" data-delay="50" data-tooltip="Nuevo viaje">work</i>
-    </a>
-  </div>
+        <a class="btn-floating btn-large" href="#modal_nuevo">
+            <i class="large material-icons tooltipped modal-trigger" data-position="left" data-delay="50" data-tooltip="Nuevo viaje">work</i>
+        </a>
+    </div>
+
+    <div id="modal_nuevo" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col s12">
+                    <h4>Registrar viaje</h4>
+                    <p>Ingresa la información solicitada para regstrar un nuevo viaje.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="input-field col m4 s12">
+                        <input id="car_type" type="text" class="validate">
+                        <label for="car_type">Auto</label>
+                    </div>
+                    <div class="input-field col m4 s12">
+                        <input id="car_model" type="text" class="validate">
+                        <label for="car_model">Modelo</label>
+                    </div>
+                    <div class="input-field col m4 s12">
+                        <input id="car_plates" type="text" class="validate">
+                        <label for="car_plates">Placas</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="input-field col m4 s12">
+                        <select>
+                            <option value="" disabled selected>Selecciona el origen</option>
+                            <option value="1">Chihuahua</option>
+                            <option value="2">Ciudad Juarez</option>
+                            <option value="3">Delicias</option>
+                        </select>
+                        <label>Origen</label>
+                    </div>
+                    <div class="input-field col m4 s12">
+                        <select>
+                            <option value="" disabled selected>Selecciona el destino</option>
+                            <option value="1">Chihuahua</option>
+                            <option value="2">Ciudad Juarez</option>
+                            <option value="3">Delicias</option>
+                        </select>
+                        <label>Destino</label>
+                    </div>
+                    <div class="input-field col m4 s12">
+                        <input id="seats" type="text" class="validate">
+                        <label for="seats">Número de asientos</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="input-field col m4 s12">
+                        <input id="day" type="date" class="datepicker validate" placeholder="Fecha">
+                    </div>
+                    <div class="input-field col m4 s12">
+                        <input id="hour" type="text" class="validate">
+                        <label for="hour">Hora</label>
+                    </div>
+                    <div class="input-field col m4 s12">
+                        <input id="price" type="text" class="validate">
+                        <label for="price">Precio</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="input-field col s12">
+                        <textarea id="comments" class="materialize-textarea"></textarea>
+                        <label for="comments">Comentarios</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cerrar</a>
+        </div>
+    </div>
 
     <footer class="page-footer grey darken-3">
         <div class="container">
@@ -62,21 +142,21 @@
                 <div class="col l4 offset-l2 s12">
                     <!-- <h5 class="white-text">Acerca ..</h5>
                     <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                    </ul> -->
-                </div>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul> -->
             </div>
         </div>
-        <div class="footer-copyright">
-            <div class="container">
-                © 2017 Jesus Arciniega
-                <a class="grey-text text-lighten-4 right" href="#!" id="logout" onclick="logout();">Cerrar sesión</a>
-            </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2017 Jesus Arciniega
+            <a class="grey-text text-lighten-4 right" href="#!" id="logout" onclick="logout();">Cerrar sesión</a>
         </div>
-    </footer>
+    </div>
+</footer>
 
 
 </body>

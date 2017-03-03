@@ -18,6 +18,7 @@ firebase.auth().signInWithPopup(provider).then(function(result) {
     // The firebase.auth.AuthCredential type that was used.
     var credential = error.credential;
     // ...
+    //window.location.href = "../login.html";
 });
 
 firebase.auth().getRedirectResult().then(function(result) {
@@ -42,6 +43,7 @@ firebase.auth().getRedirectResult().then(function(result) {
 function logout() {
     firebase.auth().signOut().then(function() {
         console.log('Signed Out');
+         $('#user_login').text("Iniciar sesión");
     }, function(error) {
         console.error('Sign Out Error', error);
     });

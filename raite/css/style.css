@@ -5,11 +5,12 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-  }
+}
 
-  main {
+main {
     flex: 1 0 auto;
-  }
+}
+.modal { width: 85% !important ; margin-top: -3%; height: 90% !important ; max-height: 95% !important}
 .nav-wrapper{
     background-color: #0085D6;
 }
