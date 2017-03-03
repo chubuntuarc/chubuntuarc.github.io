@@ -41,9 +41,8 @@ firebase.auth().getRedirectResult().then(function(result) {
 
 function logout() {
     firebase.auth().signOut().then(function() {
-        // Sign-out successful.
-        alert('Cierre de sesión exitoso')
+        console.log('Signed Out');
     }, function(error) {
-        // An error happened.
+        console.error('Sign Out Error', error);
     });
 }
