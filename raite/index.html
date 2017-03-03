@@ -22,23 +22,16 @@
             <a href="#" class="brand-logo"><img src="img/logo.png" alt=""></a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="index.html">Pro</a></li>
-                <li><a href="index.html">Ayuda</a></li>
-                <li><a href="index.html">Acerca de..</a></li>
                 <li><a href="#!" id="user_login" onclick="firebase.auth().signInWithRedirect(provider);">Iniciar sesión</a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
-                <li><a href="sass.html">Sass</a></li>
-                <li><a href="badges.html">Components</a></li>
-                <li><a href="collapsible.html">Javascript</a></li>
-                <li><a href="mobile.html">Mobile</a></li>
+                <li><a href="#!" id="user_login" onclick="firebase.auth().signInWithRedirect(provider);">Iniciar sesión</a></li>
             </ul>
         </div>
     </nav>
 
     <h1>Puntos pendientes</h1>
     <ul>
-        <li>Registrar usuarios</li>
         <li>Registrar Viajes</li>
         <li>Precios</li>
         <li>Solicitar lugar</li>
@@ -49,6 +42,42 @@
         <li>Equipaje ligero?</li>
         <li>Datos del carro</li>
         <li>Fechas</li>
+        <li>Pantalla Acceso</li>
+        <li>Login Google, correo, github</li>
     </ul>
+
+    <div class="fixed-action-btn">
+    <a class="btn-floating btn-large">
+      <i class="large material-icons tooltipped" data-position="left" data-delay="50" data-tooltip="Nuevo viaje">work</i>
+    </a>
+  </div>
+
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Raite</h5>
+                    <p class="grey-text text-lighten-4">Viaja fácil y seguro sin preocupaciones.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <!-- <h5 class="white-text">Acerca ..</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2017 Jesus Arciniega
+                <a class="grey-text text-lighten-4 right" href="#!" id="logout" onclick="logout();">Cerrar sesión</a>
+            </div>
+        </div>
+    </footer>
+
+
 </body>
 </html>
