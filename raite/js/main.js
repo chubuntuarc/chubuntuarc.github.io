@@ -16,14 +16,18 @@ jQuery(document).ready(function($) {
 
             var ref = firebase.database().ref('travels/');
             ref.on("child_added", function(snapshot){
-                $('.travels_all').add('<div class="card blue-grey darken-1">'+
+                var div = document.createElement("div");
+                var card = document.createTextNode('<div class="card blue-grey darken-1">'+
                                       '<div class="card-content white-text">'+
                                       '<span class="card-title">'+snapshot.val().origin+' - '+snapshot.val().destination+'</span>'+
                                       '<p>Fecha: '+snapshot.val().day+' Hora: '+snapshot.val().hour+'</p>'+
                                       '<p>Costo: '+snapshot.val().price+' Lugares: '+snapshot.val().seats+'</p>'+
                                       '</div><div class="card-action">'+
                                       '<a href="#">This is a link</a><a href="#">This is a link</a>'+
-                                      '</div></div>');  });
+                                      '</div></div>');
+                div.appendChild(card);
+                var element = document.getElementById("travels_all");
+                element.appendChild(div);
         } else {
             // No user is signed in.
             $('#logout').text("");
