@@ -29,13 +29,12 @@ jQuery(document).ready(function($) {
                 var element = document.getElementById("travels_all");
                 element.appendChild(div);
             }
-        }
-        } else {
+        }else {
             // No user is signed in.
             $('#logout').text("");
         }
+    }); 
     });
-});
 
 function save_travel() {
     // A post entry.
