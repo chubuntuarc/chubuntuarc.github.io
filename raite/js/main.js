@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
             var travels = [];
             ref.on("child_added", function(snapshot){
                 travels.push(snapshot.val().car_model);
-                console.log("El juego actual es ", snapshot.val().car_model);
+                console.log("El juego actual es ", snapshot.val());
                 console.log("Arreglo de viajes: ", travels);
             });
 
