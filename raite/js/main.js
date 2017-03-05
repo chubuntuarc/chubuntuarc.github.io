@@ -28,6 +28,8 @@ jQuery(document).ready(function($) {
                 div.appendChild(card);
                 var element = document.getElementById("travels_all");
                 element.appendChild(div);
+            }
+        }
         } else {
             // No user is signed in.
             $('#logout').text("");
