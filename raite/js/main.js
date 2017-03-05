@@ -1,3 +1,5 @@
+var travels = [];
+
 jQuery(document).ready(function($) {
     $('.modal').modal();
     $('select').material_select();
@@ -13,14 +15,15 @@ jQuery(document).ready(function($) {
             $('#logout').text("Cerrar sesión");
 
             var ref = firebase.database().ref('travels/');
-            var travels = [];
             ref.on("child_added", function(snapshot){
-                travels.push(snapshot.val().car_model);
-                console.log("El juego actual es ", snapshot.val());
-                console.log("Arreglo de viajes: ", travels);
-            });
-
-
+                $('.travels_all').add('<div class="card blue-grey darken-1">'+
+                                      '<div class="card-content white-text">'+
+                                      '<span class="card-title">'+snapshot.val().origin+' - '+snapshot.val().destination+'</span>'+
+                                      '<p>Fecha: '+snapshot.val().day+' Hora: '+snapshot.val().hour+'</p>'+
+                                      '<p>Costo: '+snapshot.val().price+' Lugares: '+snapshot.val().seats+'</p>'+
+                                      '</div><div class="card-action">'+
+                                      '<a href="#">This is a link</a><a href="#">This is a link</a>'+
+                                      '</div></div>');  });
         } else {
             // No user is signed in.
             $('#logout').text("");
@@ -28,7 +31,7 @@ jQuery(document).ready(function($) {
     });
 });
 
-function guardarViaje() {
+function save_travel() {
     // A post entry.
     var postData = {
         uid: firebase.auth().currentUser.uid,
