@@ -13,8 +13,11 @@ jQuery(document).ready(function($) {
             $('#logout').text("Cerrar sesión");
 
             var ref = firebase.database().ref('travels/');
+            var travels = [];
             ref.on("child_added", function(snapshot){
-                console.log("El juego actual es ", snapshot.val());
+                travels.push(snapshot.val().car_model);
+                console.log("El juego actual es ", snapshot.val().car_model);
+                console.log("Arreglo de viajes: ", travels);
             });
 
 
