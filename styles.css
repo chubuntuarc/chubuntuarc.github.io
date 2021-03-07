@@ -1,0 +1,21 @@
+* {
+  background-color: #070910;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.top_content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+}
+
+.top_content a {
+  color: #58A6FF;
+  text-decoration: none;
+}
+
+section {
+  display: grid;
+  grid-template-columns: auto;
+}
