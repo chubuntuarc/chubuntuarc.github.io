@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../../favicon.png" type="image/x-icon">
+  <title>Factura 26</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="../../favicon.png" rel="stylesheet">
+</head>
+<body>
+  <main>
+     <header>
+       <div id="from">
+        <h2>Factura: <span>a0026</span></h2>
+        <p>Jesus Arciniega</p>
+        <p>dev.jesusarc@gmail.com</p>
+        <p>arciniega.dev</p>
+      </div>
+      <div>
+        <img id="main_logo" src="https://lh6.googleusercontent.com/kB1ya0ndsnEIZUn30Hgd2A9eALlUWxDjckq1zzKdh7RRh5Rz0isXSicqRQWvS-VEw1qLjdw6ntl-u1mvYKwmk7I=w16383" alt="">
+      </div>
+     </header>
+     <hr>
+     <div id="details">
+       <div>
+         <p>Fecha de factura: <b>17/12/2021</b></p>
+         <p>Fecha de Vencimiento: <b>24/12/2021</b></p>
+       </div>
+       <div id="client">
+          <p>Cliente: <b>Food In The Box</b></p>
+          <p>Responsable: <b>Alvaro Cuesta, Maria Tavarez</b></p>
+       </div>
+     </div>
+     <hr class="divider">
+     <div>
+       <table cellspacing="0">
+         <thead>
+            <tr>
+              <th>Servicio</th>
+              <th>Horas</th>
+              <th>Tarifa</th>
+              <th>Subtotal</th>
+            </tr>
+         </thead>
+         <tbody>
+           <tr>
+              <td>Desarrollo de Software</td>
+              <td>25</td>
+              <td>€ 14.00</td>
+              <td>€ 350.00</td>
+           </tr>
+         </tbody>
+       </table>
+     </div>
+     <div id="report">
+       <h5>Reporte adjunto</h5>
+       <a href="./semana26.pdf">Semana 26</a>
+     </div>
+     <hr class="divider">
+     <div id="payment">
+       <h4>Total a pagar: <b>€ 350.00</b></h4>
+       <script src="https://www.mercadopago.com.mx/integrations/v1/web-payment-checkout.js"
+        data-preference-id="290420511-3b143b4f-257b-4a51-89f8-5e6997336e6f" data-source="button">
+        </script>
+        <p>En caso de que no funcione el boton de pago, favor de acceder a la siguiente direccion: </p>
+        <a href="https://mpago.la/1Abf7EM">Pagar</a>
+     </div>
+     <hr class="divider">
+     <div id="conversion">
+       <h5>Detalles de conversion.</h5>
+       <p>€ 350.00 > $8,163.40 MXP</p>
+       <span>€ 1 == $ 23.32 MXP :: valor al momento de crear la factura.</span>
+     </div>
+  </main>
+</body>
+<style>
+  body {
+    background-color: #c9c9c9;
+    font-family: 'Poppins', sans-serif;
+    padding: 30px;
+  }
+  #client {
+    text-align: right;
+  }
+  main {
+    background-color: #fff;
+    border: 1px solid #b1b0b0;
+    box-shadow: 4px 4px #c3c3c3;
+    border-radius: 30px;
+    padding: 20px;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  #conversion p, #conversion span{
+    font-size: 12px;
+  }
+  #conversion p{
+   margin-bottom: 0px;
+  }
+  #details {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 40px;
+  }
+  #details p{
+    font-size: 14px;
+    margin-top: -12px;
+  }
+  .divider {
+    border-style: dotted;
+    color: #dddcdc;
+  }
+  #from p {
+    font-size: 14px;
+    margin-top: -12px;
+  }
+  #main_logo {
+    float: right;
+  }
+  #payment p , #payment a{
+    font-size:12px;
+  }
+   #payment p {
+    margin-bottom: 0px;
+  }
+  #report h5 {
+    margin-bottom: 5px;
+  }
+  #report p, #report span{
+    font-size: 12px;
+  }
+  #report p{
+   margin-bottom: 0px;
+  }
+  table {
+    border: 1px solid #c3bfbf;
+    border-radius: 0px 0px 8px 8px;
+    text-align: center;
+    width: 100%;
+  }
+  th {
+    background-color: #e3e3e3;
+    border-bottom: 1px solid #c3bfbf;
+    border-top: 1px solid #c3bfbf;
+    color: #707070;
+    font-size: 14px;
+    padding: 10px;
+  }
+  tbody > tr > td {
+    border-bottom: 1px solid #c3bfbf;
+    color: #707070;
+    font-size: 14px;
+    padding: 10px;
+  }
+</style>
+</html>
